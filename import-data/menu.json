@@ -1,0 +1,462 @@
+[
+  {
+    "id": "1",
+    "name": "Chicken Burger",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["chicken", "masala"],
+    "restaurantId": "1",
+    "image": "assets/chicken-burger.jpg",
+    "qty": 0,
+    "price": 150
+  },
+  {
+    "id": "2",
+    "name": "Chicken Sandwich",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["chicken", "masala"],
+    "restaurantId": "1",
+    "image": "assets/chicken-sandwich.jpg",
+    "qty": 0,
+    "price": 180
+  },
+  {
+    "id": "3",
+    "name": "Samosa",
+    "description": "Samosa is marinated in curd and spices and then boiled in oil",
+    "ingredients": ["Flour", "masala"],
+    "restaurantId": "1",
+    "image": "assets/samosa.jpg",
+    "qty": 0,
+    "price": 120
+  },
+  {
+    "id": "4",
+    "name": "Tandoori Chicken",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["chicken", "masala"],
+    "restaurantId": "2",
+    "image": "assets/chicken-tandoori.jpg",
+    "qty": 0,
+    "price": 200
+  },
+  {
+    "id": "5",
+    "name": "Paratha Combo",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Paratha", "masala"],
+    "restaurantId": "2",
+    "image": "assets/paratha-combo.jpg",
+    "qty": 0,
+    "price": 220
+  },
+  {
+    "id": "6",
+    "name": "Paratha",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Paratha", "masala"],
+    "restaurantId": "2",
+    "image": "assets/paratha.jpg",
+    "qty": 0,
+    "price": 100
+  },
+  {
+    "id": "7",
+    "name": "Tandoori Chicken",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["chicken", "masala"],
+    "restaurantId": "3",
+    "image": "assets/chicken-tandoori.jpg",
+    "qty": 0,
+    "price": 240
+  },
+  {
+    "id": "8",
+    "name": "Chicken Biriyani",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "3",
+    "image": "assets/chicken-biriyani.jpg",
+    "qty": 0,
+    "price": 225
+  },
+  {
+    "id": "9",
+    "name": "Chicken Tikka",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "3",
+    "image": "assets/chicken-tikka.jpg",
+    "qty": 0,
+    "price": 250
+  },
+  {
+    "id": "10",
+    "name": "Chicken Wings",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["chicken", "masala"],
+    "restaurantId": "4",
+    "image": "assets/chicken-wings.jpg",
+    "qty": 0,
+    "price": 250
+  },
+  {
+    "id": "11",
+    "name": "Mutton Biriyani",
+    "description": "Mutton is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Mutton", "masala"],
+    "restaurantId": "4",
+    "image": "assets/mutton-biriyani.jpg",
+    "qty": 0,
+    "price": 300
+  },
+  {
+    "id": "12",
+    "name": "Chicken Tikka",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "4",
+    "image": "assets/chicken-tikka.jpg",
+    "qty": 0,
+    "price": 275
+  },
+  {
+    "id": "13",
+    "name": "Chicken Wings",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["chicken", "masala"],
+    "restaurantId": "5",
+    "image": "assets/chicken-wings.jpg",
+    "qty": 0,
+    "price": 210
+  },
+  {
+    "id": "14",
+    "name": "Chicken Biriyani",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "5",
+    "image": "assets/chicken-biriyani.jpg",
+    "qty": 0,
+    "price": 270
+  },
+  {
+    "id": "15",
+    "name": "Chicken Tikka",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "5",
+    "image": "assets/chicken-tikka.jpg",
+    "qty": 0,
+    "price": 240
+  },
+  {
+    "id": "16",
+    "name": "Chicken Pizza",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["chicken", "masala"],
+    "restaurantId": "6",
+    "image": "assets/chicken-pizza.jpg",
+    "qty": 0,
+    "price": 220
+  },
+  {
+    "id": "17",
+    "name": "Chicken Burger",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "6",
+    "image": "assets/chicken-burger.jpg",
+    "qty": 0,
+    "price": 180
+  },
+  {
+    "id": "18",
+    "name": "Chicken Wings",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "6",
+    "image": "assets/chicken-wings.jpg",
+    "qty": 0,
+    "price": 235
+  },
+  {
+    "id": "19",
+    "name": "Samosa",
+    "description": "Samosa is marinated in curd and spices and then boiled in oil",
+    "ingredients": ["Flour", "masala"],
+    "restaurantId": "7",
+    "image": "assets/samosa.jpg",
+    "qty": 0,
+    "price": 120
+  },
+  {
+    "id": "20",
+    "name": "Chicken Burger",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "7",
+    "image": "assets/chicken-burger.jpg",
+    "qty": 0,
+    "price": 150
+  },
+  {
+    "id": "21",
+    "name": "Chicken Wings",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "7",
+    "image": "assets/chicken-wings.jpg",
+    "qty": 0,
+    "price": 200
+  },
+  {
+    "id": "22",
+    "name": "Chicken Sandwich",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "7",
+    "image": "assets/chicken-sandwich.jpg",
+    "qty": 0,
+    "price": 160
+  },
+  {
+    "id": "23",
+    "name": "Tandoori Chicken",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "8",
+    "image": "assets/chicken-tandoori.jpg",
+    "qty": 0,
+    "price": 300
+  },
+  {
+    "id": "24",
+    "name": "Chicken Wings",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "8",
+    "image": "assets/chicken-wings.jpg",
+    "qty": 0,
+    "price": 280
+  },
+  {
+    "id": "25",
+    "name": "Chicken Sandwich",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "8",
+    "image": "assets/chicken-sandwich.jpg",
+    "qty": 0,
+    "price": 190
+  },
+  {
+    "id": "26",
+    "name": "Tandoori Chicken",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "9",
+    "image": "assets/chicken-tandoori.jpg",
+    "qty": 0,
+    "price": 250
+  },
+  {
+    "id": "27",
+    "name": "Chicken Wings",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "9",
+    "image": "assets/chicken-wings.jpg",
+    "qty": 0,
+    "price": 230
+  },
+  {
+    "id": "28",
+    "name": "Chicken Sandwich",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "9",
+    "image": "assets/chicken-sandwich.jpg",
+    "qty": 0,
+    "price": 140
+  },
+  {
+    "id": "29",
+    "name": "Chicken Wings",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "10",
+    "image": "assets/chicken-wings.jpg",
+    "qty": 0,
+    "price": 260
+  },
+  {
+    "id": "30",
+    "name": "Chicken Burger",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "10",
+    "image": "assets/chicken-burger.jpg",
+    "qty": 0,
+    "price": 240
+  },
+  {
+    "id": "31",
+    "name": "Chicken Sandwich",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "10",
+    "image": "assets/chicken-sandwich.jpg",
+    "qty": 0,
+    "price": 150
+  },
+  {
+    "id": "32",
+    "name": "Chicken Wings",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "11",
+    "image": "assets/chicken-wings.jpg",
+    "qty": 0,
+    "price": 400
+  },
+  {
+    "id": "33",
+    "name": "Chicken Burger",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "11",
+    "image": "assets/chicken-burger.jpg",
+    "qty": 0,
+    "price": 250
+  },
+  {
+    "id": "34",
+    "name": "Chicken Sandwich",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "11",
+    "image": "assets/chicken-sandwich.jpg",
+    "qty": 0,
+    "price": 220
+  },
+  {
+    "id": "35",
+    "name": "Chicken Burger",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "12",
+    "image": "assets/chicken-burger.jpg",
+    "qty": 0,
+    "price": 300
+  },
+  {
+    "id": "36",
+    "name": "Veg Pizza",
+    "description": "Vegetables are marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Vegetables", "masala"],
+    "restaurantId": "12",
+    "image": "assets/veg-pizza.jpg",
+    "qty": 0,
+    "price": 250
+  },
+  {
+    "id": "37",
+    "name": "Chicken Sandwich",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "12",
+    "image": "assets/chicken-sandwich.jpg",
+    "qty": 0,
+    "price": 280
+  },
+  {
+    "id": "38",
+    "name": "Chicken Biriyani",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "13",
+    "image": "assets/chicken-biriyani.jpg",
+    "qty": 0,
+    "price": 220
+  },
+  {
+    "id": "39",
+    "name": "Mutton Biriyani",
+    "description": "Mutton is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Mutton", "masala"],
+    "restaurantId": "13",
+    "image": "assets/mutton-biriyani.jpg",
+    "qty": 0,
+    "price": 320
+  },
+  {
+    "id": "40",
+    "name": "Chicken Sandwich",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "13",
+    "image": "assets/chicken-sandwich.jpg",
+    "qty": 0,
+    "price": 200
+  },
+  {
+    "id": "41",
+    "name": "Chicken Biriyani",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "14",
+    "image": "assets/chicken-biriyani.jpg",
+    "qty": 0,
+    "price": 225
+  },
+  {
+    "id": "42",
+    "name": "Mutton Biriyani",
+    "description": "Mutton is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Mutton", "masala"],
+    "restaurantId": "14",
+    "image": "assets/mutton-biriyani.jpg",
+    "qty": 0,
+    "price": 285
+  },
+  {
+    "id": "43",
+    "name": "Chicken Sandwich",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "14",
+    "image": "assets/chicken-sandwich.jpg",
+    "qty": 0,
+    "price": 185
+  },
+  {
+    "id": "44",
+    "name": "Chicken Pizza",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "15",
+    "image": "assets/chicken-pizza.jpg",
+    "qty": 0,
+    "price": 340
+  },
+  {
+    "id": "45",
+    "name": "Veg Pizza",
+    "description": "Vegetables are marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["vegetables", "masala"],
+    "restaurantId": "15",
+    "image": "assets/veg-pizza.jpg",
+    "qty": 0,
+    "price": 260
+  },
+  {
+    "id": "46",
+    "name": "Chicken Sandwich",
+    "description": "Chicken is marinated in curd and spices and then cooked in tandoori to...",
+    "ingredients": ["Chicken", "masala"],
+    "restaurantId": "15",
+    "image": "assets/chicken-sandwich.jpg",
+    "qty": 0,
+    "price": 220
+  }
+]

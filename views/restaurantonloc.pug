@@ -1,0 +1,20 @@
+extends locationrestaurant 
+
+block content 
+    -if(restaurantinloc)
+        each restaurantdata in restaurantinloc
+            .card.container.p-4.ml-4.w-75.m-4
+                .card-body
+                    .d-flex
+                        img.card-img-top.w-50.h-50.rounded(src=`${restaurantdata.thumb}` alt='Card image cap')
+                        .p-4
+                            h5.font-weight-bold.card-title(style='font-weight: bold;color:#000080') #{restaurantdata.name}
+                            p.card-text #{restaurantdata.address}
+                    ul.list-group.list-group-flush
+                        li.list-group-item(style='color: #7a7a52') CUISINES :  
+                            span(style='color:#00264d') #{restaurantdata.Cuisine[0].name},#{restaurantdata.Cuisine[1].name}
+                        li.list-group-item(style='color: #7a7a52') COST FOR TWO: 
+                            span(style='color:#00264d') #{restaurantdata.cost}
+
+                    button.mt-2.btn.btn-danger(type='button')
+                        a(href=`/restaurant/${restaurantdata.slug}` style='color:white;') MENU

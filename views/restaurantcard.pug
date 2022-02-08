@@ -1,0 +1,38 @@
+extends locationrestaurant 
+
+block content 
+    div.main
+        if(restaurantinloc)
+            each restaurantloc in restaurantinloc
+                .card.container.p-4.ml-4.w-75.m-4
+                    .card-body
+                        .d-flex
+                            img.card-img-top.w-50.h-50.rounded(src=`${restaurantloc.thumb}` alt='Card image cap')
+                            .p-4
+                                h5.font-weight-bold.card-title(style='font-weight: bold;color:#000080') #{restaurantloc.name}
+                                p.card-text #{restaurantloc.address}
+                        ul.list-group.list-group-flush
+                            li.list-group-item(style='color: #7a7a52') CUISINES :  
+                                span(style='color:#00264d') #{restaurantloc.Cuisine[0].name},#{restaurantloc.Cuisine[1].name}
+                            li.list-group-item(style='color: #7a7a52') COST FOR TWO: 
+                                span(style='color:#00264d') #{restaurantloc.cost}
+
+                        button.mt-2.btn.btn-danger(type='button')
+                            a(href=`/restaurant/${restaurant.slug}` style='color:white;') MENU
+        else
+            each restaurant in restaurants
+                .card.container.p-4.ml-4.w-75.m-4
+                    .card-body
+                        .d-flex
+                            img.card-img-top.w-50.h-50.rounded(src=`${restaurant.thumb}` alt='Card image cap')
+                            .p-4
+                                h5.font-weight-bold.card-title(style='font-weight: bold;color:#000080') #{restaurant.name}
+                                p.card-text #{restaurant.address}
+                        ul.list-group.list-group-flush
+                            li.list-group-item(style='color: #7a7a52') CUISINES :  
+                                span(style='color:#00264d') #{restaurant.Cuisine[0].name},#{restaurant.Cuisine[1].name}
+                            li.list-group-item(style='color: #7a7a52') COST FOR TWO: 
+                                span(style='color:#00264d') #{restaurant.cost}
+
+                        button.mt-2.btn.btn-danger(type='button')
+                            a(href=`/restaurant/${restaurant.slug}` style='color:white;') MENU

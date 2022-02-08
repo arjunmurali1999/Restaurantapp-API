@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Breakfast",
+    "content": "Start your day with exclusive breakfast options",
+    "image": "assets/breakfast.png"
+  },
+  {
+    "name": "Lunch",
+    "content": "Start your day with exclusive breakfast options",
+    "image": "assets/lunch.png"
+  },
+  {
+    "name": "Dinner",
+    "content": "Start your day with exclusive breakfast options",
+    "image": "assets/dinner.png"
+  },
+  {
+    "name": "Snacks",
+    "content": "Start your day with exclusive breakfast options",
+    "image": "assets/snacks.png"
+  },
+  {
+    "name": "Drinks",
+    "content": "Start your day with exclusive breakfast options",
+    "image": "assets/drinks.png"
+  },
+  {
+    "name": "NightLife",
+    "content": "Start your day with exclusive breakfast options",
+    "image": "assets/nightlife.png"
+  }
+]

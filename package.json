@@ -1,0 +1,47 @@
+{
+  "name": "assignment-6",
+  "version": "1.0.0",
+  "description": "Restaurant API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arjun",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "express-mongo-sanitize": "^2.1.0",
+    "express-rate-limit": "^5.5.1",
+    "express-session": "^1.17.2",
+    "google-auth-library": "^7.11.0",
+    "helmet": "^4.6.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.13",
+    "nodemailer": "^6.7.2",
+    "pug": "^3.0.2",
+    "query-string": "^7.1.0",
+    "razorpay": "^2.8.0",
+    "slugify": "^1.6.4",
+    "stripe": "^8.200.0",
+    "uuid": "^8.3.2",
+    "validator": "^13.7.0",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-react": "^7.28.0",
+    "prettier": "^2.5.1"
+  }
+}

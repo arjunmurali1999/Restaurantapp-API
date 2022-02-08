@@ -1,0 +1,78 @@
+doctype html
+head
+	// Required meta tags
+	meta(charset='utf-8')
+	meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+	// Bootstrap CSS
+	link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous')
+	link(rel='stylesheet' href='/css/style.css')
+	title=restaurant.name
+body
+each restaurantdata,i in restaurant
+	div
+		nav.navbar.navbar-light.bg-danger(style='height:80px;')
+			.w-100
+				button.btn.btn-outline-light.my-2.my-sm-0.m-2.float-right(type='button')
+					| Login
+				button.btn.btn-outline-light.my-2.my-sm-0.m-2.float-right(type='button')
+					| Create an account
+	#carouselExampleControls.carousel.slide.p-4(data-ride='carousel')
+		.carousel-inner.p-4
+			.carousel-item.active
+				img.d-block.w-100(src=`/images/restaurantimages/${restaurantdata.name.toLowerCase().split(' ').join('')}-${i+1}.jpeg` alt='restaurant images' style='height:500px;')
+			.carousel-item
+				img.d-block.w-100(src=`/images/restaurantimages/${restaurantdata.name.toLowerCase().split(' ').join('')}-${i+2}.jpeg` alt='restaurant images' style='height:500px;')
+			.carousel-item
+				img.d-block.w-100(src=`/images/restaurantimages/${restaurantdata.name.toLowerCase().split(' ').join('')}-${i+3}.jpeg` alt='restaurant images' style='height:500px;')
+		div.p-4
+			a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+				span.carousel-control-prev-icon(aria-hidden='true')
+				span.sr-only Previous
+			a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
+				span.carousel-control-next-icon(aria-hidden='true')
+				span.sr-only Next
+	.p-4.d-flex
+		img.rounded(src=`/images/restaurantimages/${restaurantdata.name.toLowerCase().split(' ').join('')}-${i+1}.jpeg` style='height:100px;width:100px')
+		h1.font-weight-bold.p-4 #{restaurantdata.name}
+	nav.navbar.navbar-expand-lg.navbar-light.bg-light.m-4
+		button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+			span.navbar-toggler-icon
+		#navbarNav.collapse.navbar-collapse
+			ul.navbar-nav
+				li.nav-item.active
+					a.nav-link(href='#about')
+						h4.text-primary Overview
+						span.sr-only (current)
+				li.nav-item.active
+					a.nav-link(href='#contact')
+						h4.text-primary Contact
+						span.sr-only (current)
+				li.nav-item.active
+					a.nav-link(href='#')
+						h4.text-primary Pricing
+						span.sr-only (current)
+		.p-4
+			button.btn.btn-danger.float-right.btn-lg.pr-4(type='button') Place Online Order
+	#about.d-flex.justify-content-start.p-4.font-weight-bold(style='color: #000080;')
+		h4.font-weight-bold About This Place
+	
+	.p-4(style='color:#003380;')
+		h4 Cuisine
+		p #{restaurantdata.type[0].name},#{restaurantdata.type[1].name}
+	.p-4(style='color:#003380;')
+		h4 Average Cost
+		p=restaurantdata.cost
+	hr.m-4(style='height:4px;background-color:#c2c2a3;')
+	#contact.p-4
+		h4.font-weight-bold Contact
+	.p-4
+		h4.text-secondary Phone No
+		p.text-dark  89***** 
+	.p-4
+		h4.font-weight-bold #{restaurantdata.name}
+		p.text-secondary  #{restaurantdata.address} 
+	// Optional JavaScript
+	// jQuery first, then Popper.js, then Bootstrap JS
+	script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossorigin='anonymous')
+	script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
+	script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous')

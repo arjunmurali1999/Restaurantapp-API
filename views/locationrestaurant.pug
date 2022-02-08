@@ -1,0 +1,90 @@
+doctype html
+head
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Bootstrap CSS
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous')
+    link(rel='stylesheet' href='/css/style.css')
+    title Restaurants
+body 
+    div
+        nav.navbar.navbar-light.bg-danger(style='height: 80px')
+            .w-100
+                button.btn.btn-outline-light.my-2.my-sm-0.m-2.float-right(type='button')
+                    | Login
+                button.btn.btn-outline-light.my-2.my-sm-0.m-2.float-right(type='button')
+                    | Create an account
+    .p-4
+        h2.font-weight-bold(style='font-weight: bold;color:#000080')=`Restaurants in `
+    .d-flex
+        .card(style='width:400px')
+            .card-header
+                h5 Filters
+            .card-body
+                form.formfilter#form1
+                    blockquote.blockquote.mb-0
+                        h6 Cuisine
+                    .input-group.pb-1
+                        .input-group-text.w-75
+                            input#c-1(type='checkbox' name='Cuisine' value='North Indian')
+                            label.p-2(for='c-1') North Indian
+                    .input-group.pb-1
+                        .input-group-text.w-75
+                            input#c-2(type='checkbox' name='Cuisine' value='South Indian')
+                            label.p-2(for='c-2') South Indian
+                    .input-group.pb-1
+                        .input-group-text.w-75
+                            input#c-3(type='checkbox' name='Cuisine' value='Chinese')
+                            label.p-2(for='c-3') Chinese
+                    .input-group.pb-1
+                        .input-group-text.w-75
+                            input#c-4(type='checkbox' name='Cuisine' value='Fast Food')
+                            label.p-2(for='c-4') Fast Food
+                    .input-group.pb-4
+                        .input-group-text.w-75
+                            input#c-5(type='checkbox' name='Cuisine' value='Street Food')
+                            label.p-2(for='c-5') Street Food
+                    div
+                        h6 Cost For Two
+                    .input-group
+                        .input-group-text.w-75
+                            input#co-1(type='radio' name='cost' value='cost[lt]=250')
+                            label.p-2(for='co-1') Less than &#x930;250
+                    .input-group
+                        .input-group-text.w-75
+                            input#co-2(type='radio' name='cost' value='cost[gte]=250&cost[lt]=500')
+                            label.p-2(for='co-2') &#x930;250-&#x930;500
+                    .input-group
+                        .input-group-text.w-75
+                            input#co-3(type='radio' name='cost' value='cost[gte]=500&cost[lt]=750')
+                            label.p-2(for='co-3') &#x930;500-&#x930;750
+                    .input-group
+                        .input-group-text.w-75
+                            input#co-4(type='radio' name='cost' value='cost[gte]=750&cost[lt]=1000')
+                            label.p-2(for='co-4') &#x930;750-&#x930;1000
+                    .input-group.pb-4
+                        .input-group-text.w-75
+                            input#co-5(type='radio' name='cost' value='cost[gte]=999')
+                            label.p-2(for='co-5') &#x930;1000+
+                    div
+                        h6 Sort
+                    .input-group.pb-2
+                        .input-group-text.w-75
+                            input#sortasc(type='radio' name='sort' value='cost')
+                            label.p-2(for='sortasc') Low To High
+                    .input-group
+                        .input-group-text.w-75
+                            input#sortdesc(type='radio' name='sort' value='-cost')
+                            label.p-2(for='sortdesc') High To Low
+                    button.btn.btn-danger.mt-4#btnfilter(form='form1') Filter
+        block content
+            h1 this is a placeholder
+    // Optional JavaScript
+    // jQuery first, then Popper.js, then Bootstrap JS
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    script(src="/js/index.js")
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+//- script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossorigin='anonymous')
+//- script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
+//- script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous')
