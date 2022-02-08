@@ -1,6 +1,6 @@
 const Stripe = require("stripe");
 const stripe = Stripe(
-  "sk_test_51KMUbxSC7l9ifhoJGfW0ZwAh2RWeVGR1zHtyjDaRNq0KvdGELxYD7teI2cyE2a73T95G2VuqKTN6ZjUzqw3oeoDv00kalbqtcE"
+  process.env.STRIPE_SECRET_KEY
 );
 const queryString = require("query-string");
 const User = require("../userModal/userModal");
