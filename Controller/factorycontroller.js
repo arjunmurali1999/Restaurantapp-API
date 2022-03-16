@@ -13,7 +13,7 @@ exports.deleteOne = (Model) =>
 
 exports.updateOne = (Model) =>
   catchasync(async (req, res, next) => {
-    const updateddoc = await Model.findByIdAndUpdate(req.params.id, req.body, {
+    const updateddoc = await Model.findByIdAndUpdate(req.user.id, req.body, {
       new: true,
       runValidators: true,
     });
@@ -53,7 +53,7 @@ exports.getall = (Model) =>
         .limitFields()
         .paginate();
       const doc = await features.query;
-      res.header('Access-Control-Allow-Origin', '*').status(200).json(doc);
+      res.header("Access-Control-Allow-Origin", "*").status(200).json(doc);
     } else {
       const features = new apiFeatures(Model.find(), req.query)
         .filter()
@@ -61,6 +61,6 @@ exports.getall = (Model) =>
         .limitFields()
         .paginate();
       const doc = await features.query;
-      res.header('Access-Control-Allow-Origin', '*').status(200).json(doc);
+      res.header("Access-Control-Allow-Origin", "*").status(200).json(doc);
     }
   });

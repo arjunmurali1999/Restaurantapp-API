@@ -6,6 +6,7 @@ const queryString = require("query-string");
 const User = require("../userModal/userModal");
 const Restaurant = require("../RestaurantModal/restaurantmodel");
 const Booking = require("../bookingModal/bookingModal");
+const Tablebooking = require("../bookingModal/tableBooking");
 const catchAsync = require("./catchasync");
 const factory = require("./factorycontroller");
 const Menu = require("../menuModal/menuModal");
@@ -61,12 +62,16 @@ exports.createOrderDetails = catchAsync(async (req, res) => {
           orderdetail: order,
           restaurant: restaurant[0]._id,
           restaurantname: restaurant[0].name,
-          restaurantaddress:restaurant[0].address,
-          image:restaurant[0].thumb,
-          restaurantId:id,
-          placedat:new Date().toLocaleString('en-US', {timeZone: 'Asia/Kolkata'})
+          restaurantaddress: restaurant[0].address,
+          image: restaurant[0].thumb,
+          restaurantId: id,
+          placedat: new Date().toLocaleString("en-US", {
+            timeZone: "Asia/Kolkata",
+          }),
         });
-        await User.findByIdAndUpdate(user[0]._id,{$set:{sessioninfo:{}}})
+        await User.findByIdAndUpdate(user[0]._id, {
+          $set: { sessioninfo: {} },
+        });
         res.status(200).json("Order received");
       } catch (err) {
         console.log(err);
@@ -74,8 +79,33 @@ exports.createOrderDetails = catchAsync(async (req, res) => {
     }
   }
 });
-exports.getOrderDetails=catchAsync(async(req,res)=>{
-  const {email}=req.query
-  const orderdetails=await Booking.find({email: email},null,{sort:{placedat:-1}})
-  res.status(200).json(orderdetails)
+exports.getOrderDetails = catchAsync(async (req, res) => {
+  const { email } = req.query;
+  const orderdetails = await Booking.find({ email: email }, null, {
+    sort: { placedat: -1 },
+  });
+  res.status(200).json(orderdetails);
+});
+//to book the table
+exports.createTablebooking = catchAsync(async (req, res) => {
+  const { name, email, phone, date, time, people, message, restaurant } =
+    req.body;
+  try {
+    await Tablebooking.create({
+      name,
+      email,
+      phoneNo: phone,
+      date,
+      time,
+      people,
+      message,
+      restaurant,
+    });
+    res.status(200).json({ success: "success", email, phone, restaurant });
+  } catch (err) {
+    console.log(err);
+  }
+});
+exports.getTableBooking=catchAsync(async(req,res)=>{
+const data=await TableBooking.find()
 })

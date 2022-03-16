@@ -47,6 +47,9 @@ const userSchema = new mongoose.Schema({
     select: false,
     default: true,
   },
+  address:{
+    type:String,
+  },
   sessioninfo:{}
 });
 userSchema.pre("save", async function (next) {

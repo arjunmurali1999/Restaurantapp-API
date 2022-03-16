@@ -71,7 +71,6 @@ app.use(xss());
 app.use(hpp());
 app.use("/api/ver1/restaurant", restaurantroute);
 app.use("/api/ver1/users", userroute);
-
 app.use("/Restaurant",bookingroute)
 // app.post('/webhook', bodyParser.raw({type: 'application/json'}), (request, response) => {
 //   const event = request.body;

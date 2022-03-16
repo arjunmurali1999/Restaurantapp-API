@@ -14,7 +14,11 @@ router
   .route("/updatepassword")
   .patch(authController.protect, authController.updatepassword);
 
-router.route("/:id").get(authController.protect, userController.getuser);
+router.route("/user").get(authController.protect, userController.getuser);
+router
+  .route("/")
+  .put(authController.protect,userController.updateuser)
+
 router.use(
   authController.protect,
   authController.restrictTo("Developer", "admin")
@@ -22,7 +26,6 @@ router.use(
 router.route("/").get(userController.getalluser);
 router
   .route("/:id")
-  .patch(userController.updateuser)
   .delete(userController.deleteuser);
 
 module.exports = router;

@@ -1,5 +1,5 @@
 class APIfeatures {
-  constructor(query, queryString) {
+  constructor(query, queryString) {  //http:localhost:3000/restaurant?Cuisine=NorthIndian?Sort=1
     this.query = query;
     this.queryString = queryString;
   }
